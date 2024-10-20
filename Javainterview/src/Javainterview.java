@@ -30,7 +30,7 @@ public class Javainterview {
         if (likesChocolate) {
             System.out.println("Wow, " + name + "! I love Chocolate also!");
         } else {
-            System.out.println(name + ", ew, yuck !");
+            System.out.println(name + ", ew yuck !");
         }
     }
 }
