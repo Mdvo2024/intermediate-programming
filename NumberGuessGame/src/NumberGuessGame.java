@@ -1,4 +1,5 @@
 //Copyright 2024 Miles Dvorett
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class NumberGuessGame {
@@ -6,6 +7,7 @@ public class NumberGuessGame {
 
 
     public static void main(String[] args) {
+         ArrayList<Integer> pastGuesses = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
         int minRange, maxRange;
         System.out.println("Welcome to Miles' number game!");
@@ -42,6 +44,12 @@ public class NumberGuessGame {
 
             int userGuess = scanner.nextInt();
             guessCount++;
+
+            if (pastGuesses.contains(userGuess)) {
+                System.out.println("You've already guessed that number! Try again.");
+                continue;
+            }
+            pastGuesses.add(userGuess);
 
             if (userGuess < randomNumber) {
                 System.out.println("The number is higher. Try again.");
