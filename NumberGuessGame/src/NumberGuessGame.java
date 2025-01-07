@@ -3,16 +3,12 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class NumberGuessGame {
+    ArrayList<Integer> pastGuesses = new ArrayList<>();
+    Scanner scanner = new Scanner(System.in);
+    int minRange, maxRange;
+    int guessCount = 0;
 
-
-
-    public static void main(String[] args) {
-   playGame();
-    }
-        public static void playGame() {
-         ArrayList<Integer> pastGuesses = new ArrayList<>();
-        Scanner scanner = new Scanner(System.in);
-        int minRange, maxRange;
+        public void playGame() {
         System.out.println("Welcome to Miles' number game!");
         // Get range from user
        
@@ -33,7 +29,6 @@ public class NumberGuessGame {
 
         // Generate random number
         int randomNumber = minRange + (int)(Math.random() * ((maxRange - minRange) + 1));
-        int guessCount = 0;
         boolean guessedCorrectly = false;
 
         // Guessing loop
@@ -67,7 +62,7 @@ public class NumberGuessGame {
         // scanner.close();
     }
 
-    public static int Checker(Scanner scanner) {
+    public int Checker(Scanner scanner) {
         if (!scanner.hasNextInt()) { //number is not an integer
         System.out.println("Invalid input. Please enter a number.");
         scanner.next(); // Clear invalid input
