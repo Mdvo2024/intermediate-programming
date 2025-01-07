@@ -7,6 +7,9 @@ public class NumberGuessGame {
 
 
     public static void main(String[] args) {
+   playGame();
+    }
+        public static void playGame() {
          ArrayList<Integer> pastGuesses = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
         int minRange, maxRange;
@@ -61,7 +64,7 @@ public class NumberGuessGame {
             }
         }
 
-        scanner.close();
+        // scanner.close();
     }
 
     public static int Checker(Scanner scanner) {
