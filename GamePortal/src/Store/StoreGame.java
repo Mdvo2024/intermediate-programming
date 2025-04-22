@@ -170,7 +170,7 @@ public class StoreGame implements GameWriteable {
         
         }
 
-        scanner.close();
+        //scanner.close();
     
 }
     @Override
@@ -187,7 +187,7 @@ public class StoreGame implements GameWriteable {
         if (currentHighScore == null ) { //copilot
             return true;
         }
-        return Integer.parseInt(score) > Integer.parseInt(currentHighScore);//copilot
+        return Integer.parseInt(score) < Integer.parseInt(currentHighScore);//copilot
     }
 
 }
