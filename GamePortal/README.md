@@ -1,18 +1,12 @@
-## Getting Started
+There are 3 games, 
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+NumberGuessGame:
+guess a number that is randomly selected from a numberset depending on how big ur range is. It gives you higher and lower hints until you reach the mystery number!
 
-## Folder Structure
 
-The workspace contains two folders by default, where:
+StoreGame: 
+A real estate game where you invest in different propertys that have different returns. You start with 50K and the goal is to get to 100 Million dollars in the fewest investments/turns possible!
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Quiz:
+A game that will select what fortnite boss you are most like depending on the actions you would choose during different situations!
